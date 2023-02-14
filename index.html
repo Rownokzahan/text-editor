@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-violet-100">
+    <header class="my-6 md:mt-24 md:mb-12">
+        <h1 class="text-4xl font-semibold text-center">Text Editor</h1>
+    </header>
+
+    <main class="w-10/12 mx-auto">
+        <section id="style-section"
+            class="md:flex items-center justify-between py-4 px-2 mb-4 rounded-t border-b-2 border-black bg-white">
+            <div class="flex items-center justify-evenly gap-4">
+                <i id="bold" class="fa-solid fa-bold"></i>
+                <i id="italic" class="fa-solid fa-italic"></i>
+                <i id="underline" class="fa-solid fa-underline"></i>
+                <i id="strike" class="fa-solid fa-strikethrough"></i>
+            </div>
+
+            <div class="flex items-center justify-evenly gap-4 my-6 md:my-0" id="text-align">
+                <i id="left" class="fa-solid fa-align-left"></i>
+                <i id="right" class="fa-solid fa-align-right"></i>
+                <i id="center" class="fa-solid fa-align-center"></i>
+                <i id="justify" class="fa-solid fa-align-justify"></i>
+            </div>
+
+            <div class="flex items-center justify-evenly gap-4">
+                <input id="font-size" type="number" class="w-12" value="16">
+                <button id="case" class="">Aa</button>
+                <input type="color" id="color">
+            </div>
+        </section>
+        <section>
+            <textarea id="text" class="w-full h-96 p-2 rounded "></textarea>
+        </section>
+    </main>
+
+    <footer class="text-center text-xs text-gray-400">
+        <p>© copyright 2022 by Rownok, all right reserved</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
